@@ -1,0 +1,140 @@
+body {
+    background: radial-gradient(rgba(15,67,77, 0.6), rgba(59,25,77, 0.4));
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+article {
+    margin-top: 50px;
+}
+.mainContainer {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    justify-content: center
+}
+.mainContainer h1 {
+    font-size: 1.9em;
+}
+.smallText {
+    font-size: 0.7em;
+}
+
+.zipInput {
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.textInput {
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 15px;
+}
+.formArea {
+    grid-area: formItem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+}
+.form-group {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form {
+    display: grid;
+    width: 90%;
+    grid-template-areas: 
+    ". formItem weatherItem ."
+    ". formItem button .";
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+}
+.weatherPart {
+    grid-area: weatherItem;
+    align-content: flex-start;
+}
+.button{
+    grid-area: button;
+}
+.generateButton {
+    border-radius: 30px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 5px 5px rgba(54, 54, 52, 0.1);
+}
+.generateButton:hover {
+    background-color: rgba(189, 202, 10, 0.2);
+    cursor: pointer;
+}
+#errorMessage {
+    color: rgba(255, 0, 0, 0.479);
+}
+.journal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    background: radial-gradient(rgba(145, 210, 224, 0.6), rgba(203, 154, 230, 0.4));
+    border-radius: 15px;
+}
+.journalCard {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 8px;
+}
+input::placeholder {
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 600px){
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form-group {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .formArea {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+    }
+    .zipInput {
+        width: 70%;
+        margin: auto;
+        border-radius: 30px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .textInput {
+        border-radius: 30px;
+        font-size: 15px;
+        padding: 15px;
+        width: 90%;
+    }
+    .mainContainer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        justify-content: center
+    }
+}

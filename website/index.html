@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main class="mainContainer">
+            <section>
+                <h1>Weather Journal App</h2>
+                <div><span class="smallText">made by Mustafa Bereket following Udacity guidelines</span></div>
+                <article>
+                    <p>Please provide required information to hold a Journal of weather and your mood.</p>
+                </article>
+            </section>
+            <h3 id="errorMessage"></h3>
+            <section class="form">
+                    <div class="formArea">
+                        <div class="form-group">
+                          <label>Zip Code</label>
+                            <input class="zipInput" id="zip" type="number" placeholder="Enter zip code here">  
+                        </div>
+                        <div class="form-group">
+                            <label>Journal</label>
+                            <textarea class="textInput" id="feelings" rows="10"></textarea> 
+                        </div>
+                    </div>
+                    <div class="weatherPart">
+                        <h2 id="city"></h1>
+                        <h1 id="temp"></h1>
+                    </div>
+                    <div class="button">
+                        <button class="generateButton" id="generate">Generate</button>
+                    </div>
+            </section>
+            <section class="journal" id="journal">
+
+            </section>
+        </main>
+    </body>
+    <script src="app.js"></script>
+</html>
